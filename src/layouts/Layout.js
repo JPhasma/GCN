@@ -1,3 +1,9 @@
+import { Header } from '../components/Header';
+
 export const Layout = () => {
-  return <div>Layout</div>;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 };
