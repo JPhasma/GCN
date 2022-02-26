@@ -15,12 +15,13 @@ export const VideoList = () => {
       <ul>
         {videoData.map((result) => (
           <li key={result._id} className='video_container'>
-            <h4>{result.title}</h4>
-            <img
-              src={`https://img.youtube.com/vi/${result._id}/mqdefault.jpg`}
-              alt={result.title}
-            />
-            <p>{result.description}</p>
+            <a href={`/${result.urlTitle}`}>
+              <h4>{result.title}</h4>
+              <img
+                src={`https://img.youtube.com/vi/${result._id}/mqdefault.jpg`}
+                alt={result.title}
+              />
+            </a>
           </li>
         ))}
       </ul>
