@@ -21,6 +21,7 @@ export const IconBar = () => {
 
   const searchToggle = (e) => {
     e.preventDefault();
+    setMenuStatus(false); // clears main menu if it is open
     // TODO make the Search Box toggle
     alert('TODO make the Search Box toggle');
   };

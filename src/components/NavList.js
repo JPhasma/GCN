@@ -1,62 +1,104 @@
+import './NavList.scss';
+
+import { Link } from 'react-router-dom';
+
 export const NavList = () => {
   return (
     <ul className='container' className='main_nav'>
       <li>
-        <a href='/'>Home</a>
+        <Link className='anchor_item' to='/'>
+          Home
+        </Link>
       </li>
       <li>
-        <a href='/category/gcn-show'>GCN Show</a>
+        <Link className='anchor_item' to='/category/gcn-show'>
+          GCN Show
+        </Link>
       </li>
       <li>
-        <a href='/category/how-to'>How To</a>
+        <Link className='anchor_item' to='/category/how-to'>
+          How To
+        </Link>
       </li>
       <li>
-        <a href='/category/maintenance-mondays'>Maintenance</a>
+        <Link className='anchor_item' to='/category/maintenance-mondays'>
+          Maintenance
+        </Link>
       </li>
       <li>
-        <a href='/category/ask-gcn'>Ask GCN</a>
+        <Link className='anchor_item' to='/category/ask-gcn'>
+          Ask GCN
+        </Link>
       </li>
       <li>
-        <a href='/category/train-with-gcn'>Training </a>
+        <Link className='anchor_item' to='/category/train-with-gcn'>
+          Training{' '}
+        </Link>
       </li>
       <li>
-        <a href='/category/features'>Features</a>
+        <Link className='anchor_item' to='/category/features'>
+          Features
+        </Link>
       </li>
       <li>
-        <a href='/category/top-10s'>Top 10s</a>
+        <Link className='anchor_item' to='/category/top-10s'>
+          Top 10s
+        </Link>
       </li>
       <li>
-        <a href='/category/gcn-racing'>GCN Racing</a>
+        <Link className='anchor_item' to='/category/gcn-racing'>
+          GCN Racing
+        </Link>
       </li>
       <li>
-        <a href='/category/gcn-tech'>GCN Tech</a>
+        <Link className='anchor_item' to='/category/gcn-tech'>
+          GCN Tech
+        </Link>
       </li>
       <li>
-        <a href='/presenters'>Presenters</a>
+        <Link className='anchor_item' to='/presenters'>
+          Presenters
+        </Link>
         <ul>
           <li>
-            <a href='/presenters/conor-dunne'>Conor Dunne</a>
+            <Link className='anchor_item' to='/presenters/conor-dunne'>
+              Conor Dunne
+            </Link>
           </li>
           <li>
-            <a href='/presenters/daniel-lloyd'>Daniel Lloyd</a>
+            <Link className='anchor_item' to='/presenters/daniel-lloyd'>
+              Daniel Lloyd
+            </Link>
           </li>
           <li>
-            <a href='/presenters/james-lw'>James Lowsley-Williams</a>
+            <Link className='anchor_item' to='/presenters/james-lw'>
+              James Lowsley-Williams
+            </Link>
           </li>
           <li>
-            <a href='/presenters/jon-cannings'>Jon Cannings</a>
+            <Link className='anchor_item' to='/presenters/jon-cannings'>
+              Jon Cannings
+            </Link>
           </li>
           <li>
-            <a href='/presenters/manon-lloyd'>Manon Lloyd</a>
+            <Link className='anchor_item' to='/presenters/manon-lloyd'>
+              Manon Lloyd
+            </Link>
           </li>
           <li>
-            <a href='/presenters/oliver-bridgewood'>Oliver Bridgewood</a>
+            <Link className='anchor_item' to='/presenters/oliver-bridgewood'>
+              Oliver Bridgewood
+            </Link>
           </li>
           <li>
-            <a href='/presenters/simon-richardson'>Simon Richardson</a>
+            <Link className='anchor_item' to='/presenters/simon-richardson'>
+              Simon Richardson
+            </Link>
           </li>
           <li>
-            <a href='/presenters/tom-last'>Tom Last</a>
+            <Link className='anchor_item' to='/presenters/tom-last'>
+              Tom Last
+            </Link>
           </li>
         </ul>
       </li>

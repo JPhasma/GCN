@@ -1,0 +1,43 @@
+@import '../variables.scss';
+
+nav ul.main_nav {
+  margin: 0;
+  padding: 0;
+  position: absolute; // positions above base iconbar
+  bottom: 56px;
+  min-height: 480px;
+  background-color: $grey;
+  width: 100%;
+
+  li {
+    border: 1px solid red;
+    margin: 10px;
+    width: 100px;
+    height: 60px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .anchor_item {
+    background-color: deeppink;
+    display: block;
+    height: 60px;
+  }
+
+  li ul {
+    display: none;
+  }
+
+  li:first-child {
+    display: none; // hides Home. keep in List as useful for accessibility
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    @media (min-width: $desktop) {
+      img {
+        display: none;
+      }
+    }
+  }
+}

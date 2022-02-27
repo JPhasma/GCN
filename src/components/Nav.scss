@@ -1,7 +1,7 @@
 @import '../variables.scss';
 
 nav.hide_menu .main_nav {
-  display: none;
+  display: none; // for toggling the menu display
 }
 
 nav {
@@ -14,29 +14,6 @@ nav {
   padding: 0;
   @media (min-width: $tablet) {
     position: unset;
-  }
-
-  ul.main_nav {
-    margin: 0;
-    padding: 0;
-    position: absolute; // positions above base iconbar
-    bottom: 56px;
-    min-height: 480px;
-    background-color: $grey;
-    width: 100%;
-
-    li:first-child {
-      display: none; // hides Home. keep in List as useful for accessibility
-    }
-    a {
-      color: #fff;
-      text-decoration: none;
-      @media (min-width: $desktop) {
-        img {
-          display: none;
-        }
-      }
-    }
   }
 
   @media (min-width: $desktop) {
