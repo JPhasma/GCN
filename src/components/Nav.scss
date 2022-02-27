@@ -41,3 +41,17 @@ nav {
     border: 10px solid green;
   }
 }
+
+.iconbar {
+  li {
+    display: inline;
+  }
+  img,
+  svg {
+    height: 40px;
+    width: 40px;
+  }
+  svg {
+    color: #fff;
+  }
+}

@@ -3,17 +3,22 @@ import { DataContext } from '../contexts/DataContext';
 
 import './Nav.scss';
 
+import { FaHome as HomeIcon } from 'react-icons/fa';
 import facebook from '../images/IconCrc_Facebook.png';
 import twitter from '../images/IconCrc_Twitter.png';
 import instagram from '../images/IconCrc_Instagram.png';
+import { FaSearch as SearchIcon } from 'react-icons/fa';
+import { FiMenu as MenuIcon } from 'react-icons/fi';
 
 export const Nav = () => {
   return (
     <nav>
-      <div id='iconbar'>
+      <div className='iconbar'>
         <ul className='iconbar_social'>
           <li>
-            <a href='/'>H</a>
+            <a href='/'>
+              <HomeIcon alt='Home' />
+            </a>
           </li>
           <li>
             <a
@@ -40,6 +45,16 @@ export const Nav = () => {
               rel='noreferrer'
             >
               <img src={instagram} alt='Link to GCN Instagram' />
+            </a>
+          </li>
+          <li>
+            <a href='/Search'>
+              <SearchIcon alt='Search' />
+            </a>
+          </li>
+          <li>
+            <a href='/Menu'>
+              <MenuIcon alt='Menu Toggle Button' />
             </a>
           </li>
         </ul>
