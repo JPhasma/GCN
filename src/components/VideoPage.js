@@ -25,7 +25,7 @@ export const VideoPage = () => {
 
   // format the JS Date
   return (
-    <div>
+    <div className='container'>
       {videoDetails.map((result) => (
         <div key={result._id}>
           <img
@@ -33,6 +33,9 @@ export const VideoPage = () => {
             alt={result.title}
           />
           <h2>{result.title}</h2>
+          <h4 className='todo'>
+            TODO: the formatting for the description needs work!
+          </h4>
           <p>{result.description}</p>
         </div>
       ))}

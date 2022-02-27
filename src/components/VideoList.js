@@ -10,7 +10,7 @@ export const VideoList = () => {
   console.log('videoData', videoData);
 
   return (
-    <div id='video_list'>
+    <div id='video_list' className='container'>
       <h2>Video List</h2>
       <ul>
         {videoData.map((result) => (

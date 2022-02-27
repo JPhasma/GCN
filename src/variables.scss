@@ -10,3 +10,18 @@ $secondary: #000;
 $small: 375px; // width for iphone6 as baseline
 $mobile: 667px; // iphone6 in landscape (and up)
 $desktop: 1200px; // large monitors etc
+
+// container size for fullscreen
+.container {
+  @media (min-width: 1200px) {
+    width: 1200px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.todo {
+  color: greenyellow;
+  font-size: 18px;
+  font-weight: 700;
+}

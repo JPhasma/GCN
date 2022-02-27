@@ -1,0 +1,12 @@
+@import '../variables.scss';
+
+nav {
+  border: 10px solid $primary;
+
+  @media (min-width: $desktop) {
+    // TODO - Desktop layout
+    // and make this layout work for older legacy browsers
+    // (asuming mobile now all use modern CSS) and use basic CSS 2/3
+    border: 10px solid green;
+  }
+}
