@@ -1,3 +1,10 @@
+@import '../variables.scss';
+
 nav {
-  display: none;
+  // display: none;
+  border: 10px solid $primary;
+
+  @media (min-width: $desktop) {
+    border: 10px solid green;
+  }
 }

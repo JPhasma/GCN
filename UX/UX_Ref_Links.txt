@@ -1,0 +1,19 @@
+
+
+# Interesting UX navigations
+https://www.udemy.com 
+- prominent search
+- side menu at mobile
+- micro menus at fullscreen (eg: the Heart), useful for info and marketing
+- excellent ideas for handing lots of categories. Could be useful if integrating more content (eg: from eCommerce)
+
+https://trello.com/b/AjOvyrub/playsports
+- Trello UI (need permissions to see)
+- progressive collapsing menu (using 'More v') as screen width reduces
+- prominent search box
+- uselling and other features eg: 'New Stuff', 'Invite' (I'll send an invite)
+
+
+# Alternatives to Hamburger Menu
+https://uxplanet.org/alternatives-of-hamburger-menu-a8b0459bf994
+

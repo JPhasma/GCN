@@ -1,7 +1,8 @@
+@import './variables.scss';
+
 // Own styles
 
 // zero out styles and add some refinements
-
 html,
 body,
 h1,
@@ -23,7 +24,7 @@ p {
 }
 
 button {
-  background-color: #c30006;
+  background-color: $gcn_red;
   color: #fff;
   font-size: 17px;
   padding: 12px 16px;
