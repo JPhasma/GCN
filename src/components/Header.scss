@@ -2,4 +2,8 @@
 
 #topbar {
   background-color: $primary;
+  padding: 12px 12px 8px;
+  #logo img {
+    width: 80px;
+  }
 }
