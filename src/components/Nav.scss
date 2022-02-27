@@ -1,12 +1,13 @@
 @import '../variables.scss';
 
 nav {
-  height: 86px;
-  // overflow: hidden;
+  height: 56px;
   background-color: $secondary;
-  position: fixed;
+  position: fixed; // sticky at base for mobile
   width: 100%;
-  bottom: 0; // sticky at base for mobile
+  bottom: 0;
+  margin: 0;
+  padding: 0;
   @media (min-width: $tablet) {
     position: unset;
   }
@@ -15,8 +16,8 @@ nav {
     margin: 0;
     padding: 0;
     position: absolute; // positions above base iconbar
-    bottom: 86px;
-    min-height: 400px;
+    bottom: 56px;
+    min-height: 480px;
     background-color: $grey;
     width: 100%;
 
@@ -43,13 +44,19 @@ nav {
 }
 
 .iconbar {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 18px;
+  }
   li {
-    display: inline;
+    height: 24px;
+    width: 24px;
   }
   img,
   svg {
-    height: 40px;
-    width: 40px;
+    height: 24px;
+    width: 24px;
   }
   svg {
     color: #fff;
