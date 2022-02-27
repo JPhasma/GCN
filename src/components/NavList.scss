@@ -5,12 +5,26 @@ nav ul.main_nav {
   padding: 0;
   position: absolute; // positions above base iconbar
   bottom: 56px;
-  min-height: 480px;
+  height: 540px;
   background-color: $grey;
   width: 100%;
 
-  li {
-    border: 1px solid red;
+  & > li {
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    a {
+      display: block;
+      border: 1px solid red;
+      padding: 8px 10px;
+    }
+  }
+
+  & > li:last-of-type {
+    border: none;
+  }
+
+  li ul li {
+    border: 1px solid #fff;
     margin: 10px;
     width: 100px;
     height: 60px;
@@ -18,17 +32,19 @@ nav ul.main_nav {
     text-align: center;
   }
 
-  .anchor_item {
+  li ul .anchor_item {
     background-color: deeppink;
     display: block;
     height: 60px;
+    border-radius: 4px;
   }
 
   li ul {
-    display: none;
+    margin: 0;
+    padding: 0;
   }
 
-  li:first-child {
+  & > li:first-child {
     display: none; // hides Home. keep in List as useful for accessibility
   }
   a {
