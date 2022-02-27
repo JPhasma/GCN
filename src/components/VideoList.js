@@ -1,6 +1,8 @@
 import { useContext } from 'react';
 import { DataContext } from '../contexts/DataContext';
 
+import { Loader } from '../components/Loader';
+
 import './VideoList.scss';
 
 export const VideoList = () => {
@@ -24,6 +26,7 @@ export const VideoList = () => {
           </li>
         ))}
       </ul>
+      <Loader />
     </div>
   );
 };

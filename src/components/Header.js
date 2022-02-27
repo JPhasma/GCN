@@ -1,6 +1,8 @@
 import { useContext } from 'react';
 import { DataContext } from '../contexts/DataContext';
 
+import './Header.scss';
+
 export const Header = () => {
   return (
     <header>
