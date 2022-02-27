@@ -1,3 +1,6 @@
+import { useContext } from 'react';
+import { DataContext } from '../contexts/DataContext';
+
 import './IconBar.scss';
 
 import { FaHome as HomeIcon } from 'react-icons/fa';
@@ -8,6 +11,13 @@ import { FaSearch as SearchIcon } from 'react-icons/fa';
 import { FiMenu as MenuIcon } from 'react-icons/fi';
 
 export const IconBar = () => {
+  const { menuStatus, setMenuStatus } = useContext(DataContext);
+
+  const menuToggle = (e) => {
+    e.preventDefault();
+    setMenuStatus(!menuStatus); // toggles value for menu open/close
+  };
+
   return (
     <div className='iconbar'>
       <ul className='iconbar_links'>
@@ -50,7 +60,7 @@ export const IconBar = () => {
           </a>
         </li>
         <li>
-          <a href='/Menu'>
+          <a href='/Menu' onClick={menuToggle}>
             <MenuIcon alt='Menu Toggle Button' />
           </a>
         </li>

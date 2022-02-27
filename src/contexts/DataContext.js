@@ -9,6 +9,7 @@ export const DataContext = createContext();
 export const DataContextProvider = ({ children }) => {
   // set up context api states to share between context components
   const [videoData, setVideoData] = useState([]);
+  const [menuStatus, setMenuStatus] = useState(false);
 
   // JSON video data
   // useEffect(() => {
@@ -32,6 +33,8 @@ export const DataContextProvider = ({ children }) => {
     <DataContext.Provider
       value={{
         videoData,
+        menuStatus,
+        setMenuStatus,
       }}
     >
       {children}

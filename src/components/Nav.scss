@@ -1,5 +1,9 @@
 @import '../variables.scss';
 
+nav.hide_menu .main_nav {
+  display: none;
+}
+
 nav {
   height: 56px;
   background-color: $secondary;

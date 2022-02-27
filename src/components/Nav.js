@@ -7,8 +7,10 @@ import { IconBar } from './IconBar';
 import { NavList } from './NavList';
 
 export const Nav = () => {
+  const { menuStatus } = useContext(DataContext);
+
   return (
-    <nav>
+    <nav className={menuStatus === true ? '' : 'hide_menu'}>
       <IconBar />
       <NavList />
     </nav>
