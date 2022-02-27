@@ -1,6 +1,7 @@
 
 
-# Interesting UX navigations
+# Interesting UX navigations (some quick UI/UX patterns research)
+
 https://www.udemy.com 
 - prominent search
 - side menu at mobile
@@ -14,6 +15,14 @@ https://trello.com/b/AjOvyrub/playsports
 - uselling and other features eg: 'New Stuff', 'Invite' (I'll send an invite)
 
 
-# Alternatives to Hamburger Menu
+
+# UX/UI recent ideas on Nav (especially mobile)
+
+https://uxplanet.org/should-all-mobile-navigation-be-at-the-bottom-4c434b5159cd
+- nav at bottom of screen ?
+- reach zones and ease of use on handheld device
+
+
 https://uxplanet.org/alternatives-of-hamburger-menu-a8b0459bf994
+- Alternatives to Hamburger Menu
 
