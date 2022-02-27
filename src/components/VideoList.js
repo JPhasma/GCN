@@ -8,6 +8,7 @@ import './VideoList.scss';
 
 export const VideoList = () => {
   const { videoData } = useContext(DataContext);
+  console.log(videoData);
 
   return (
     <div id='video_list' className='container'>
@@ -16,12 +17,12 @@ export const VideoList = () => {
         {videoData.map((result) => (
           <li key={result._id} className='video_container'>
             <Link to={`/video/${result.urlTitle}`}>
-              <h4>{result.title}</h4>
               <img
                 src={`https://img.youtube.com/vi/${result._id}/mqdefault.jpg`}
                 alt={result.title}
               />
-              <p>{result.urlTitle}</p>
+              <h6>{result.publishDate}</h6>
+              <h4>{result.title}</h4>
             </Link>
           </li>
         ))}
