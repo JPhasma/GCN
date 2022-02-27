@@ -11,7 +11,7 @@ export const VideoList = () => {
 
   return (
     <div id='video_list' className='container'>
-      <h2>Video List</h2>
+      <h2>Latest Videos</h2>
       <ul>
         {videoData.map((result) => (
           <li key={result._id} className='video_container'>

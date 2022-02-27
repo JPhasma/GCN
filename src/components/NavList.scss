@@ -1,52 +1,82 @@
 @import '../variables.scss';
 
+nav.hide_menu .main_nav {
+  display: none; // for toggling the menu display
+}
+
 nav ul.main_nav {
   margin: 0;
   padding: 0;
   position: absolute; // positions above base iconbar
   bottom: 56px;
-  height: 540px;
+  height: 532px;
   background-color: $grey;
   width: 100%;
-
-  & > li {
-    border-bottom: 1px solid #ccc;
-    width: 100%;
-    a {
-      display: block;
-      border: 1px solid red;
-      padding: 8px 10px;
-    }
-  }
-
-  & > li:last-of-type {
-    border: none;
-  }
-
-  li ul li {
-    border: 1px solid #fff;
-    margin: 10px;
-    width: 100px;
-    height: 60px;
-    display: inline-block;
-    text-align: center;
-  }
-
-  li ul .anchor_item {
-    background-color: deeppink;
-    display: block;
-    height: 60px;
-    border-radius: 4px;
-  }
 
   li ul {
     margin: 0;
     padding: 0;
   }
 
+  > li {
+    // top level nav items only
+    clear: left;
+    margin-top: 8px;
+    height: 80px;
+    width: 100%;
+    a {
+      display: block;
+
+      padding: 8px 10px;
+    }
+  }
+
+  li ul li {
+    margin: 10px 10px 14px;
+    width: 28%;
+    padding: 0;
+    display: block;
+    float: left;
+    text-align: center;
+    height: 40px;
+  }
+
+  li ul .anchor_item {
+    background-color: $primary;
+    &:hover {
+      background-color: #900004;
+    }
+    display: block;
+    height: 34px !important;
+    border-radius: 4px;
+    padding: 20px 0 0;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
   & > li:first-child {
     display: none; // hides Home. keep in List as useful for accessibility
   }
+
+  & > li:last-child {
+    position: relative;
+    top: 12px;
+  }
+  & > li:last-child ul li {
+    width: 19%;
+    height: 106px;
+    padding: 0;
+    .anchor_item {
+      padding: 0;
+
+      height: 100%;
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+  }
+
   a {
     color: #fff;
     text-decoration: none;

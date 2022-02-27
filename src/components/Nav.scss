@@ -1,9 +1,5 @@
 @import '../variables.scss';
 
-nav.hide_menu .main_nav {
-  display: none; // for toggling the menu display
-}
-
 nav {
   height: 56px;
   background-color: $secondary;
