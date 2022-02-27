@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { DataContext } from '../contexts/DataContext';
+import { Link } from 'react-router-dom';
 
 import './IconBar.scss';
 
@@ -18,13 +19,19 @@ export const IconBar = () => {
     setMenuStatus(!menuStatus); // toggles value for menu open/close
   };
 
+  const searchToggle = (e) => {
+    e.preventDefault();
+    // TODO make the Search Box toggle
+    alert('TODO make the Search Box toggle');
+  };
+
   return (
     <div className='iconbar'>
       <ul className='iconbar_links'>
         <li>
-          <a href='/'>
+          <Link to='/'>
             <HomeIcon alt='Home' />
-          </a>
+          </Link>
         </li>
         <li>
           <a
@@ -55,7 +62,7 @@ export const IconBar = () => {
         </li>
         {/* <!-- not included google+ as its gone --> */}
         <li>
-          <a href='/Search'>
+          <a href='/Search' onClick={searchToggle}>
             <SearchIcon alt='Search' />
           </a>
         </li>

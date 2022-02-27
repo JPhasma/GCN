@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Nav } from './Nav';
 
 import './Header.scss';
@@ -8,9 +9,9 @@ export const Header = () => {
     <header>
       <div id='topbar'>
         <div className='container'>
-          <a href='/' id='logo'>
+          <Link to='/' id='logo'>
             <img src={GCN} alt='Global Cycling Network' />
-          </a>
+          </Link>
         </div>
       </div>
       <Nav />

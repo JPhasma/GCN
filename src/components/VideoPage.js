@@ -5,11 +5,10 @@ import { DataContext } from '../contexts/DataContext';
 export const VideoPage = () => {
   const { videoData } = useContext(DataContext);
   const { slug } = useParams();
-  console.log(slug, videoData);
+
   let videoDetails = videoData.filter((video) => {
     return video.urlTitle === slug;
   });
-  console.log(videoDetails);
 
   // TODOs
   // check for any duplications
