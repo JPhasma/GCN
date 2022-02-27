@@ -3,10 +3,49 @@ import { DataContext } from '../contexts/DataContext';
 
 import './Nav.scss';
 
+import facebook from '../images/IconCrc_Facebook.png';
+import twitter from '../images/IconCrc_Twitter.png';
+import instagram from '../images/IconCrc_Instagram.png';
+
 export const Nav = () => {
   return (
     <nav>
-      <ul className='container'>
+      <div id='iconbar'>
+        <ul className='iconbar_social'>
+          <li>
+            <a href='/'>H</a>
+          </li>
+          <li>
+            <a
+              href='https://facebook.com/globalcyclingnetwork'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <img src={facebook} alt='Link to GCN Facebook' />
+            </a>
+          </li>
+          <li>
+            <a
+              href='https://twitter.com/gcntweet'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <img src={twitter} alt='Link to GCN Twitter' />
+            </a>
+          </li>
+          <li>
+            <a
+              href='https://instagram.com/globalcyclingnetwork/?hl=en'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <img src={instagram} alt='Link to GCN Instagram' />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <ul className='container' className='main_nav'>
         <li>
           <a href='/'>Home</a>
         </li>

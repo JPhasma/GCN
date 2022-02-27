@@ -2,7 +2,7 @@
 
 nav {
   height: 86px;
-  overflow: hidden;
+  // overflow: hidden;
   background-color: $secondary;
   position: fixed;
   width: 100%;
@@ -11,9 +11,15 @@ nav {
     position: unset;
   }
 
-  ul {
+  ul.main_nav {
     margin: 0;
     padding: 0;
+    position: absolute; // positions above base iconbar
+    bottom: 86px;
+    min-height: 400px;
+    background-color: $grey;
+    width: 100%;
+
     li:first-child {
       display: none; // hides Home. keep in List as useful for accessibility
     }
