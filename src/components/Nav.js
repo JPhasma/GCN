@@ -36,33 +36,6 @@ export const Nav = () => {
           <a href='/category/gcn-tech'>GCN Tech</a>
         </li>
         <li>
-          <a href='/presenters'>Presenters </a>
-        </li>
-        <li>
-          <a href='/presenters/conor-dunne'>Conor Dunne</a>
-        </li>
-        <li>
-          <a href='/presenters/daniel-lloyd'>Daniel Lloyd</a>
-        </li>
-        <li>
-          <a href='/presenters/james-lw'>James Lowsley-Williams</a>
-        </li>
-        <li>
-          <a href='/presenters/jon-cannings'>Jon Cannings</a>
-        </li>
-        <li>
-          <a href='/presenters/manon-lloyd'>Manon Lloyd</a>
-        </li>
-        <li>
-          <a href='/presenters/oliver-bridgewood'>Oliver Bridgewood</a>
-        </li>
-        <li>
-          <a href='/presenters/simon-richardson'>Simon Richardson</a>
-        </li>
-        <li>
-          <a href='/presenters/tom-last'>Tom Last</a>
-        </li>
-        <li>
           <a href='/presenters'>Presenters</a>
           <ul>
             <li>
