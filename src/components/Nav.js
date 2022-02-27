@@ -1,6 +1,8 @@
 import { useContext } from 'react';
 import { DataContext } from '../contexts/DataContext';
 
+import './Nav.scss';
+
 export const Nav = () => {
   return (
     <nav>

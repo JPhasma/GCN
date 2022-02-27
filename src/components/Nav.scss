@@ -1,7 +1,32 @@
 @import '../variables.scss';
 
 nav {
-  border: 10px solid $primary;
+  height: 86px;
+  overflow: hidden;
+  background-color: $secondary;
+  position: fixed;
+  width: 100%;
+  bottom: 0; // sticky at base for mobile
+  @media (min-width: $tablet) {
+    position: unset;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    li:first-child {
+      display: none; // hides Home. keep in List as useful for accessibility
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      @media (min-width: $desktop) {
+        img {
+          display: none;
+        }
+      }
+    }
+  }
 
   @media (min-width: $desktop) {
     // TODO - Desktop layout
