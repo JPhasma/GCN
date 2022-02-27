@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useContext } from 'react';
 import { DataContext } from '../contexts/DataContext';
+import Moment from 'react-moment';
 
 export const VideoPage = () => {
   const { videoData } = useContext(DataContext);
@@ -10,7 +11,6 @@ export const VideoPage = () => {
     return video.urlTitle === slug;
   });
 
-  // TODOs
   // check for any duplications
   if (videoDetails.length > 1) {
     // only used first returned
@@ -18,11 +18,10 @@ export const VideoPage = () => {
     videoDetails = [trim];
   }
 
+  // TODOs
   // format description;
-
   // add links to the URLS in description
 
-  // format the JS Date
   return (
     <div className='container'>
       {videoDetails.map((result) => (
@@ -32,8 +31,13 @@ export const VideoPage = () => {
             alt={result.title}
           />
           <h2>{result.title}</h2>
+          <h6>
+            Published on{' '}
+            <Moment format='MMMM Do YYYY'>{result.publishDate}</Moment>
+          </h6>
           <h4 className='todo'>
-            TODO: the formatting for the description needs work!
+            TODO: the formatting for the description (and a lot more) needs
+            work!
           </h4>
           <p>{result.description}</p>
         </div>
