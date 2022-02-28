@@ -8,8 +8,13 @@ nav {
   bottom: 0;
   margin: 0;
   padding: 0;
+
+  // Tablet+ layout
   @media (min-width: $tablet) {
-    position: unset;
+    // places nav and iconbar at top of page from tablet width onwards
+    position: fixed;
+    bottom: unset;
+    border: 1px solid #000;
   }
 
   @media (min-width: $desktop) {

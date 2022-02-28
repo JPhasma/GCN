@@ -6,15 +6,19 @@ import { VideoPage } from '../components/VideoPage';
 import { Page } from '../components/Page';
 import { Footer } from '../components/Footer';
 
+import './Layout.scss';
+
 export const Layout = () => {
   return (
     <div>
       <Header />
-      <Routes>
-        <Route path='/' element={<VideoList />}></Route>
-        <Route path='/video/:slug' element={<VideoPage />}></Route>
-        <Route path='*' element={<Page />}></Route>
-      </Routes>
+      <main className='main_content'>
+        <Routes>
+          <Route path='/' element={<VideoList />}></Route>
+          <Route path='/video/:slug' element={<VideoPage />}></Route>
+          <Route path='*' element={<Page />}></Route>
+        </Routes>
+      </main>
       <Footer />
     </div>
   );

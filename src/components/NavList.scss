@@ -13,6 +13,13 @@ nav ul.main_nav {
   background-color: $grey;
   width: 100%;
 
+  // Tablet+ layout
+  @media (min-width: $tablet) {
+    bottom: unset;
+    height: 720px;
+    position: fixed;
+  }
+
   li ul {
     margin: 0;
     padding: 0;

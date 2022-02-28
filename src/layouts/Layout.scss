@@ -1,0 +1,14 @@
+@import '../variables.scss';
+
+// helper styles
+
+.hide {
+  display: none;
+}
+
+.main_content {
+  // Tablet+ layout
+  @media (min-width: $tablet) {
+    padding-top: 120px;
+  }
+}

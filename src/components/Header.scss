@@ -1,25 +1,33 @@
 @import '../variables.scss';
-
-#topbar {
-  background-color: $primary;
-  padding: 12px 12px 8px;
-  #logo img {
-    width: 80px;
+header {
+  // Tablet+ layout
+  @media (min-width: $tablet) {
+    position: fixed;
+    width: 100%;
   }
-  .topbar_nav {
-    width: 260px;
-    float: right;
-    text-align: right;
-    a {
-      color: #000;
-      background-color: #fff;
-      display: inline;
-      padding: 6px;
-      margin: 0 0 0 8px;
-      border-radius: 4px;
-      text-decoration: none;
-      font-size: 12px;
-      font-weight: 500;
+
+  #topbar {
+    background-color: $primary;
+    padding: 12px 12px 8px;
+    #logo img {
+      width: 80px;
+    }
+    .topbar_nav {
+      width: 260px;
+      float: right;
+      text-align: right;
+
+      a {
+        color: #000;
+        background-color: #fff;
+        display: inline;
+        padding: 6px;
+        margin: 0 0 0 8px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 500;
+      }
     }
   }
 }
