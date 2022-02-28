@@ -87,20 +87,6 @@ nav ul.main_nav {
     }
   }
 
-  // Tablet+ layout
-  // @media (min-width: $tablet) {
-  //   display: flex;
-  //   justify-content: space-between;
-
-  //   // TODO fix layout
-  //   background-color: turquoise;
-  //   display: none;
-  //   > li {
-  //     border: 1px solid red;
-  //     width: 48%;
-  //   }
-  // }
-
   a {
     color: #fff;
     text-decoration: none;
@@ -109,19 +95,5 @@ nav ul.main_nav {
         display: none;
       }
     }
-  }
-}
-
-// fixes layout issue when viewing on
-// small device at landscape
-.let_scroll {
-  nav ul.main_nav {
-    border: 1px solid green !important;
-  }
-  // Tablet+ layout
-  @media (min-width: $tablet) {
-    bottom: unset;
-    height: 720px;
-    position: unset;
   }
 }
