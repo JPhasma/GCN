@@ -1,10 +1,7 @@
 @import '../variables.scss';
 header {
-  // Tablet+ layout
-  @media (min-width: $tablet) {
-    position: fixed;
-    width: 100%;
-  }
+  position: fixed;
+  width: 100%;
 
   #topbar {
     background-color: $primary;
