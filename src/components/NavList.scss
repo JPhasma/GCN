@@ -19,6 +19,13 @@ nav ul.main_nav {
     bottom: unset;
     position: relative;
     top: -4px;
+    padding-left: 3%;
+  }
+
+  // Desktop+ layout -- hides mobile nav for now
+  // TODO: Style this as a straigh forwards horizontal ul nav
+  @media (min-width: $desktop) {
+    display: none;
   }
 
   li ul {

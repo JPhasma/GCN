@@ -1,9 +1,28 @@
+@import '../variables.scss';
+
 #searchbox {
   background-color: #333;
   position: absolute;
   bottom: 54px;
   width: 100%;
   padding: 10px 16px 0;
+
+  // Tablet+ layout
+  @media (min-width: $tablet) {
+    position: initial;
+    width: 64%;
+    background-color: transparent;
+    padding: 10px 0 0 12px;
+    float: left;
+    button {
+      margin: 0 !important;
+    }
+  }
+
+  // Desktop+ layout
+  @media (min-width: 992px) {
+    width: 58%;
+  }
 
   input {
     width: 70%;
@@ -24,10 +43,21 @@
 }
 
 .iconbar {
+  // view toggle helper classes
   .show_search {
     display: block;
   }
   .hide_search {
     display: none;
+  }
+}
+
+// Tablet+ layout
+@media (min-width: $tablet) {
+  #search_icon {
+    display: none;
+  }
+  .iconbar .hide_search {
+    display: block !important;
   }
 }

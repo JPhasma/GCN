@@ -17,10 +17,21 @@ nav {
     border-top: 1px solid #000;
   }
 
+  .todo_msg {
+    display: none;
+  }
   @media (min-width: $desktop) {
     // TODO - Desktop layout
     // and make this layout work for older legacy browsers
     // (asuming mobile now all use modern CSS) and use basic CSS 2/3
-    border: 10px solid green;
+    border-top: 4px solid green;
+    border-bottom: 4px solid green;
+    .todo_msg {
+      display: block;
+      color: #fff;
+    }
+    #menu_toggle {
+      display: none;
+    }
   }
 }

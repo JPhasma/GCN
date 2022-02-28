@@ -12,7 +12,7 @@ export const SearchBox = () => {
   };
   const searchHandler = (e) => {
     e.preventDefault();
-    alert('searching: ' + searchCriteria);
+    alert('searching: ' + searchCriteria); // using alert temp for prototyping
   };
 
   return (

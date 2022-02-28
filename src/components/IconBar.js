@@ -77,7 +77,7 @@ export const IconBar = () => {
           </a>
         </li>
         <li>
-          <a href='/Menu' onClick={menuToggle}>
+          <a href='/Menu' onClick={menuToggle} id='menu_toggle'>
             <MenuIcon alt='Menu Toggle Button' />
           </a>
         </li>
