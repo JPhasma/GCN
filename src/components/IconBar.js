@@ -13,20 +13,24 @@ import { FaSearch as SearchIcon } from 'react-icons/fa';
 import { FiMenu as MenuIcon } from 'react-icons/fi';
 
 export const IconBar = () => {
-  const { menuStatus, setMenuStatus, searchboxStatus, setSearchboxStatus } =
-    useContext(DataContext);
+  const {
+    menuStatus,
+    setMenuStatus,
+    searchboxStatus,
+    setSearchboxStatus,
+    setSearchCriteria,
+  } = useContext(DataContext);
 
   const menuToggle = (e) => {
     e.preventDefault();
     setMenuStatus(!menuStatus); // toggles value for menu open/close
+    setSearchboxStatus(false); // clears Search Box
+    setSearchCriteria('');
   };
 
   const searchToggle = (e) => {
     e.preventDefault();
     setMenuStatus(false); // clears main menu if it is open
-    // TODO make the Search Box toggle
-    // alert('TODO make the Search Box toggle');
-    console.log(searchboxStatus);
     setSearchboxStatus(!searchboxStatus);
   };
 

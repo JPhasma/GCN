@@ -11,6 +11,7 @@ export const DataContextProvider = ({ children }) => {
   const [videoData, setVideoData] = useState([]);
   const [menuStatus, setMenuStatus] = useState(false);
   const [searchboxStatus, setSearchboxStatus] = useState(false);
+  const [searchCriteria, setSearchCriteria] = useState('');
 
   // JSON video data
   // useEffect(() => {
@@ -38,6 +39,8 @@ export const DataContextProvider = ({ children }) => {
         setMenuStatus,
         searchboxStatus,
         setSearchboxStatus,
+        searchCriteria,
+        setSearchCriteria,
       }}
     >
       {children}
