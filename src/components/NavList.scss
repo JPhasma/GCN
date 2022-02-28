@@ -88,18 +88,18 @@ nav ul.main_nav {
   }
 
   // Tablet+ layout
-  @media (min-width: $tablet) {
-    display: flex;
-    justify-content: space-between;
+  // @media (min-width: $tablet) {
+  //   display: flex;
+  //   justify-content: space-between;
 
-    // TODO fix layout
-    background-color: turquoise;
-    display: none;
-    > li {
-      border: 1px solid red;
-      width: 48%;
-    }
-  }
+  //   // TODO fix layout
+  //   background-color: turquoise;
+  //   display: none;
+  //   > li {
+  //     border: 1px solid red;
+  //     width: 48%;
+  //   }
+  // }
 
   a {
     color: #fff;

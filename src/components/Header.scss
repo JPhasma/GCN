@@ -2,6 +2,10 @@
 header {
   position: fixed;
   width: 100%;
+  // Tablet+ layout
+  @media (min-width: $tablet) {
+    position: initial;
+  }
 
   #topbar {
     background-color: $primary;

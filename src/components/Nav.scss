@@ -12,8 +12,9 @@ nav {
   // Tablet+ layout
   @media (min-width: $tablet) {
     // places nav and iconbar at top of page from tablet width onwards
-    position: fixed;
+    position: initial;
     bottom: unset;
+    border-top: 1px solid #000;
   }
 
   @media (min-width: $desktop) {
@@ -24,12 +25,12 @@ nav {
   }
 }
 
-.let_scroll nav {
-  // Tablet+ layout
-  @media (min-width: $tablet) {
-    // places nav and iconbar at top of page from tablet width onwards
-    position: unset !important;
-    bottom: unset;
-    border-top: 1px solid #000;
-  }
-}
+// .let_scroll nav {
+//   // Tablet+ layout
+//   @media (min-width: $tablet) {
+//     // places nav and iconbar at top of page from tablet width onwards
+//     position: unset !important;
+//     bottom: unset;
+//     border-top: 1px solid #000;
+//   }
+// }
