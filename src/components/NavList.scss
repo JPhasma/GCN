@@ -9,14 +9,13 @@ nav ul.main_nav {
   padding: 0;
   position: absolute; // positions above base iconbar
   bottom: 56px;
-  height: 528px;
+  height: 536px;
   background-color: $grey;
   width: 100%;
   list-style: none;
   // Tablet+ layout
   @media (min-width: $tablet) {
     bottom: unset;
-    height: 720px;
     position: relative;
   }
 
@@ -75,6 +74,7 @@ nav ul.main_nav {
     padding: 0;
     .anchor_item {
       padding: 0;
+      max-width: 80px;
       background-color: transparent !important;
       &:hover {
         background-color: transparent !important;
@@ -82,6 +82,7 @@ nav ul.main_nav {
       height: 100%;
       img {
         width: 100%;
+        max-width: 80px;
         border-radius: 50%;
       }
     }
