@@ -1,0 +1,33 @@
+#searchbox {
+  background-color: #333;
+  position: absolute;
+  bottom: 54px;
+  width: 100%;
+  padding: 10px 16px 0;
+
+  input {
+    width: 70%;
+    display: inline;
+    padding: 10px;
+    border-radius: 4px 0 0 4px;
+    border: none;
+  }
+
+  button {
+    font-size: 12px;
+    border-radius: 0 4px 4px 0;
+    width: 60px !important;
+    min-width: 60px;
+    padding: 11px 8px;
+    display: inline;
+  }
+}
+
+.iconbar {
+  .show_search {
+    display: block;
+  }
+  .hide_search {
+    display: none;
+  }
+}

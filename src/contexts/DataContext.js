@@ -10,6 +10,7 @@ export const DataContextProvider = ({ children }) => {
   // set up context api states to share between context components
   const [videoData, setVideoData] = useState([]);
   const [menuStatus, setMenuStatus] = useState(false);
+  const [searchboxStatus, setSearchboxStatus] = useState(false);
 
   // JSON video data
   // useEffect(() => {
@@ -35,6 +36,8 @@ export const DataContextProvider = ({ children }) => {
         videoData,
         menuStatus,
         setMenuStatus,
+        searchboxStatus,
+        setSearchboxStatus,
       }}
     >
       {children}

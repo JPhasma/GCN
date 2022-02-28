@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { DataContext } from '../contexts/DataContext';
 import { Link } from 'react-router-dom';
 
+import { SearchBox } from './SearchBox';
 import './IconBar.scss';
 
 import { FaHome as HomeIcon } from 'react-icons/fa';
@@ -12,7 +13,8 @@ import { FaSearch as SearchIcon } from 'react-icons/fa';
 import { FiMenu as MenuIcon } from 'react-icons/fi';
 
 export const IconBar = () => {
-  const { menuStatus, setMenuStatus } = useContext(DataContext);
+  const { menuStatus, setMenuStatus, searchboxStatus, setSearchboxStatus } =
+    useContext(DataContext);
 
   const menuToggle = (e) => {
     e.preventDefault();
@@ -23,11 +25,14 @@ export const IconBar = () => {
     e.preventDefault();
     setMenuStatus(false); // clears main menu if it is open
     // TODO make the Search Box toggle
-    alert('TODO make the Search Box toggle');
+    // alert('TODO make the Search Box toggle');
+    console.log(searchboxStatus);
+    setSearchboxStatus(!searchboxStatus);
   };
 
   return (
     <div className='iconbar container'>
+      <SearchBox />
       <ul className='iconbar_links '>
         <li className='tablet_hide'>
           <Link to='/'>
@@ -63,7 +68,7 @@ export const IconBar = () => {
         </li>
         {/* <!-- not included google+ as its gone --> */}
         <li>
-          <a href='/Search' onClick={searchToggle}>
+          <a href='/Search' onClick={searchToggle} id='search_icon'>
             <SearchIcon alt='Search' />
           </a>
         </li>
