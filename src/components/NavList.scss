@@ -17,7 +17,7 @@ nav ul.main_nav {
   @media (min-width: $tablet) {
     bottom: unset;
     height: 720px;
-    position: unset;
+    position: relative;
   }
 
   li ul {
