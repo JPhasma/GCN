@@ -3,6 +3,8 @@ import { useContext } from 'react';
 import { DataContext } from '../contexts/DataContext';
 import Moment from 'react-moment';
 
+import './VideoPage.scss';
+
 export const VideoPage = () => {
   const { videoData } = useContext(DataContext);
   const { slug } = useParams();
@@ -25,7 +27,7 @@ export const VideoPage = () => {
   return (
     <div className='container'>
       {videoDetails.map((result) => (
-        <div key={result._id}>
+        <div key={result._id} className='video_page'>
           <img
             src={`https://img.youtube.com/vi/${result._id}/mqdefault.jpg`}
             alt={result.title}
