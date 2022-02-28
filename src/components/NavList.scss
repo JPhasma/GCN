@@ -5,6 +5,7 @@ nav.hide_menu .main_nav {
 }
 
 nav ul.main_nav {
+  clear: both;
   margin: 0;
   padding: 0;
   position: absolute; // positions above base iconbar
@@ -17,6 +18,7 @@ nav ul.main_nav {
   @media (min-width: $tablet) {
     bottom: unset;
     position: relative;
+    top: -4px;
   }
 
   li ul {

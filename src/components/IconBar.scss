@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .iconbar {
   ul {
     display: flex;
@@ -15,5 +17,19 @@
   }
   svg {
     color: #fff;
+  }
+  // Tablet+ layout
+  @media (min-width: $tablet) {
+    ul {
+      display: initial;
+      float: right;
+      li {
+        display: inline-block;
+        margin: -2px 0 0 12px;
+      }
+    }
+    .tablet_hide {
+      display: none;
+    }
   }
 }

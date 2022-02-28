@@ -27,14 +27,14 @@ export const IconBar = () => {
   };
 
   return (
-    <div className='iconbar'>
-      <ul className='iconbar_links'>
-        <li>
+    <div className='iconbar container'>
+      <ul className='iconbar_links '>
+        <li className='tablet_hide'>
           <Link to='/'>
             <HomeIcon alt='Home' />
           </Link>
         </li>
-        <li>
+        <li className='tablet_hide'>
           <a
             href='https://facebook.com/globalcyclingnetwork'
             target='_blank'
@@ -43,7 +43,7 @@ export const IconBar = () => {
             <img src={facebook} alt='Link to GCN Facebook' />
           </a>
         </li>
-        <li>
+        <li className='tablet_hide'>
           <a
             href='https://twitter.com/gcntweet'
             target='_blank'
@@ -52,7 +52,7 @@ export const IconBar = () => {
             <img src={twitter} alt='Link to GCN Twitter' />
           </a>
         </li>
-        <li>
+        <li className='tablet_hide'>
           <a
             href='https://instagram.com/globalcyclingnetwork/?hl=en'
             target='_blank'
