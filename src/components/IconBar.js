@@ -34,13 +34,19 @@ export const IconBar = () => {
     setSearchboxStatus(!searchboxStatus);
   };
 
+  const clearAll = () => {
+    setSearchboxStatus(false); // clears Search Box
+    setMenuStatus(false); // clears main menu
+    setSearchCriteria(''); // clears search string
+  };
+
   return (
     <div className='iconbar container'>
       <SearchBox />
       <ul className='iconbar_links '>
         <li className='tablet_hide'>
           <Link to='/'>
-            <HomeIcon alt='Home' />
+            <HomeIcon alt='Home' onClick={clearAll} />
           </Link>
         </li>
         <li className='tablet_hide'>
