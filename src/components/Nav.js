@@ -10,9 +10,11 @@ export const Nav = () => {
   const { menuStatus } = useContext(DataContext);
 
   return (
-    <nav className={menuStatus === true ? '' : 'hide_menu'}>
-      <IconBar />
-      <NavList />
-    </nav>
+    <div>
+      <nav className={menuStatus === true ? '' : 'hide_menu'}>
+        <IconBar />
+        <NavList />
+      </nav>
+    </div>
   );
 };
