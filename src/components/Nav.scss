@@ -23,3 +23,13 @@ nav {
     border: 10px solid green;
   }
 }
+
+.let_scroll nav {
+  // Tablet+ layout
+  @media (min-width: $tablet) {
+    // places nav and iconbar at top of page from tablet width onwards
+    position: unset !important;
+    bottom: unset;
+    border-top: 1px solid #000;
+  }
+}

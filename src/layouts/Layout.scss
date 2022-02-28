@@ -13,3 +13,13 @@
     padding-top: 120px;
   }
 }
+
+.let_scroll {
+  .main_content {
+    padding-top: 44px;
+    // Tablet+ layout
+    @media (min-width: $tablet) {
+      padding-top: 44px;
+    }
+  }
+}
