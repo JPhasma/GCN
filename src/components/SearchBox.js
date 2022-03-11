@@ -15,6 +15,12 @@ export const SearchBox = () => {
     alert('searching: ' + searchCriteria); // using alert temp for prototyping
   };
 
+  const enterHandler = (e) => {
+    if (e.key === 'Enter') {
+      searchHandler(e);
+    }
+  };
+
   return (
     <div
       id='searchbox'
@@ -25,6 +31,7 @@ export const SearchBox = () => {
         placeholder='Search fo videos'
         onChange={(e) => updateSearch(e.target.value)}
         value={searchCriteria}
+        onKeyPress={enterHandler}
       />
       <button onClick={searchHandler}>Search</button>
     </div>
